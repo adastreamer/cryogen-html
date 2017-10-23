@@ -1,0 +1,273 @@
+/* line 7, ../sass/styles.scss */
+.main-yellow-button:hover {
+  background: #ffffff;
+}
+/* line 11, ../sass/styles.scss */
+.main-yellow-button:active {
+  background: #dadada;
+}
+
+/* line 16, ../sass/styles.scss */
+.yellow-button {
+  background: #f8e81c;
+  color: #000000;
+  border-radius: 6px;
+}
+/* line 21, ../sass/styles.scss */
+.yellow-button:hover {
+  background: #123997;
+  color: #ffffff;
+}
+/* line 26, ../sass/styles.scss */
+.yellow-button:active {
+  background: #102965;
+  color: #ffffff;
+}
+
+/* line 34, ../sass/styles.scss */
+.block {
+  overflow: scroll;
+  display: none;
+}
+/* line 38, ../sass/styles.scss */
+.block-about {
+  background: url("./../images/logo-big.svg") center bottom no-repeat;
+  background-size: contain;
+}
+/* line 42, ../sass/styles.scss */
+.block-about .container {
+  position: relative;
+  z-index: 2;
+}
+/* line 49, ../sass/styles.scss */
+.block-video {
+  background: url("./../images/bg-2_2x.png") center center no-repeat;
+  background-color: #171f32;
+}
+
+/* line 55, ../sass/styles.scss */
+.content .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 61, ../sass/styles.scss */
+.slider {
+  z-index: 50;
+}
+
+/* line 65, ../sass/styles.scss */
+.title {
+  font-family: 'WhitneySemiBold', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #171e32;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+/* line 74, ../sass/styles.scss */
+.title span {
+  display: block;
+}
+/* line 79, ../sass/styles.scss */
+.title__logo img {
+  width: 78px;
+  height: 29px;
+  margin-bottom: 5px;
+  opacity: 0.1;
+}
+
+/* line 91, ../sass/styles.scss */
+.about__dop_title {
+  font-family: 'WhitneySemiBold', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #0e0e0e;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+/* line 102, ../sass/styles.scss */
+.about__text {
+  font-family: 'WhitneyMedium', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: #0e0e0e;
+  opacity: 0.4;
+}
+/* line 109, ../sass/styles.scss */
+.about__text p {
+  margin: 0;
+}
+/* line 114, ../sass/styles.scss */
+.about__infore {
+  padding: 5px 0 5px 45px;
+  background: url("./../images/about_icon.png") left center no-repeat;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: 'WhitneySemiBold', sans-serif;
+  color: #0e0e0e;
+  font-weight: 600;
+  margin-top: 15px;
+}
+/* line 124, ../sass/styles.scss */
+.about__infore span {
+  display: block;
+}
+/* line 129, ../sass/styles.scss */
+.about__col_wrap {
+  margin: 30px -40px;
+}
+/* line 132, ../sass/styles.scss */
+.about__col_wrap:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* line 140, ../sass/styles.scss */
+.about__col {
+  padding: 40px;
+  float: left;
+  width: 50%;
+  min-height: 300px;
+}
+/* line 146, ../sass/styles.scss */
+.about__col--pull_right {
+  float: right;
+}
+/* line 151, ../sass/styles.scss */
+.about__for_bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 160, ../sass/styles.scss */
+.about__top_left {
+  width: 732px;
+  height: 706px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: url("./../images/line-2.svg") center center no-repeat;
+  background-size: contain;
+}
+/* line 170, ../sass/styles.scss */
+.about__top_center {
+  width: 363px;
+  position: absolute;
+  height: 286px;
+  left: 640px;
+  z-index: 1;
+  top: 0;
+  background: url("./../images/group-2.svg") center center no-repeat;
+  background-size: contain;
+}
+/* line 180, ../sass/styles.scss */
+.about__bottom_center {
+  position: absolute;
+  z-index: 1;
+  width: 366px;
+  height: 243px;
+  left: 490px;
+  bottom: 0;
+  background: url("./../images/group-4.svg") center center no-repeat;
+  background-size: contain;
+}
+
+/* line 194, ../sass/styles.scss */
+.video__play_wrap {
+  padding: 150px;
+  margin: 40px auto;
+}
+/* line 199, ../sass/styles.scss */
+.video__play {
+  background: url("./../images/play-wh.svg") center top no-repeat;
+  text-decoration: none;
+  padding-top: 110px;
+  background-size: 96px 96px;
+  max-width: 380px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+/* line 209, ../sass/styles.scss */
+.video__play:hover {
+  text-decoration: none;
+  background-image: url("./../images/play-wh_hover.svg");
+}
+/* line 214, ../sass/styles.scss */
+.video__play:before {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  height: 1px;
+  width: 120px;
+  transform: rotate(-45deg);
+  background: #ffffff;
+  display: block;
+  content: ' ';
+}
+/* line 225, ../sass/styles.scss */
+.video__play:after {
+  position: absolute;
+  left: -100px;
+  bottom: -100px;
+  height: 1px;
+  width: 120px;
+  transform: rotate(-45deg);
+  background: #ffffff;
+  display: block;
+  content: ' ';
+}
+/* line 238, ../sass/styles.scss */
+.video__logo_wrap {
+  text-align: right;
+}
+/* line 241, ../sass/styles.scss */
+.video__logo {
+  background: url("./../images/logo_wh.svg") center center no-repeat;
+  background-size: contain;
+  width: 43px;
+  height: 16px;
+  display: inline-block;
+}
+/* line 249, ../sass/styles.scss */
+.video__text {
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 35px;
+}
+/* line 256, ../sass/styles.scss */
+.video__title {
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "WhitneySemiBold", sans-serif;
+  font-weight: 600;
+  line-height: 35px;
+}
+/* line 266, ../sass/styles.scss */
+.video__dop_text {
+  bottom: 100px;
+  opacity: 0.3;
+  max-width: 980px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 200px;
+}

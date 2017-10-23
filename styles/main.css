@@ -39,7 +39,6 @@
 
 *{
   box-sizing: border-box;
-  font-family: "WhitneyBook", Arial;
 }
 
 html, body{
@@ -49,6 +48,7 @@ html, body{
   overflow: hidden;
   padding: 0;
   margin: 0;
+  font-family: "WhitneyBook", Arial;
 }
 
 /* helpers */
@@ -85,13 +85,14 @@ b{
   cursor: pointer;
   text-decoration: none;
 }
-.yellow-button{
+.main-yellow-button{
   background: yellow;
   color: black;
+  font-size: 24px;
   border-radius: 6px;
-}
-.yellow-button:hover{
-  opacity: .9;
+  text-align: center;
+  padding: 20px;
+  width: 280px;
 }
 /**/
 
