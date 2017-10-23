@@ -1,0 +1,359 @@
+/* fonts */
+@font-face {
+  font-family: "WhitneyBook";
+  src: url("../fonts/WhitneyBook/WhitneyBook.eot");
+  src: url("../fonts/WhitneyBook/WhitneyBook.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/WhitneyBook/WhitneyBook.woff") format("woff"),
+  url("../fonts/WhitneyBook/WhitneyBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "WhitneyLight";
+  src: url("../fonts/WhitneyLight/WhitneyLight.eot");
+  src: url("../fonts/WhitneyLight/WhitneyLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/WhitneyLight/WhitneyLight.woff") format("woff"),
+  url("../fonts/WhitneyLight/WhitneyLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "WhitneyMedium";
+  src: url("../fonts/WhitneyMedium/WhitneyMedium.eot");
+  src: url("../fonts/WhitneyMedium/WhitneyMedium.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/WhitneyMedium/WhitneyMedium.woff") format("woff"),
+  url("../fonts/WhitneyMedium/WhitneyMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "WhitneySemiBold";
+  src: url("../fonts/WhitneySemiBold/WhitneySemiBold.eot");
+  src: url("../fonts/WhitneySemiBold/WhitneySemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/WhitneySemiBold/WhitneySemiBold.woff") format("woff"),
+  url("../fonts/WhitneySemiBold/WhitneySemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/**/
+
+*{
+  box-sizing: border-box;
+  font-family: "WhitneyBook", Arial;
+}
+
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* helpers */
+.-color-white{
+  color: white;
+}
+.-color-black{
+  color: black;
+}
+.-font-light{
+  font-family: "WhitneyLight";
+}
+.-font-bold{
+  font-family: "WhitneySemiBold";
+}
+/**/
+
+/* common */
+.container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  //max-width: 1180px;
+  height: 100%;
+  //background: red;
+  padding: 20px 30px;
+}
+b{
+  font-family: "WhitneySemiBold";
+}
+.cryo-button{
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.yellow-button{
+  background: yellow;
+  color: black;
+  border-radius: 6px;
+}
+.yellow-button:hover{
+  opacity: .9;
+}
+/**/
+
+/* header */
+.header{
+  width: 100%;
+}
+.header .logo{
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header .logo img{
+  height: 30px;
+}
+/* menu */
+.-color-white .header .menu{
+  color: white;
+}
+.-color-black .header .menu{
+  color: black;
+}
+.header .menu{
+  float: right;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.header .menu li{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.header .menu li a{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.-color-white .header .menu li a{
+  color: white;
+}
+.-color-black .header .menu li a{
+  color: black;
+}
+.header .menu li a:hover{
+  text-decoration: underline;
+}
+.header .menu li .sep{
+  opacity: .5;
+}
+.-color-white .header .menu li .sep{
+  color: white;
+}
+.-color-black .header .menu li .sep{
+  color: black;
+}
+.header .menu li .lang-icon{
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.header .menu li.lang-switcher-item{
+  margin-left: 10px;
+}
+.header .menu li .join{
+  padding: 14px 20px;
+  border-radius: 6px;
+  border: solid 1px #959595;
+}
+.header .menu li .join:hover{
+  text-decoration: none;
+}
+.-color-white .header .menu li .join:hover{
+  background-color: white;
+  border: solid 1px white;
+  color: black;
+  text-decoration: none;
+}
+.-color-black .header .menu li .join:hover{
+  background-color: black;
+  border: solid 1px black;
+  color: white;
+  text-decoration: none;
+}
+/**/
+
+/* footer */
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.footer .left{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+.footer .left li{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer .left li.copyright{
+  color: #aaa;
+  margin-right: 40px;
+}
+.footer .left li.partner a{
+  opacity: .8;
+}
+.footer .left li.partner a:hover{
+  opacity: 1;
+}
+.footer .left li.partner a img{
+  vertical-align: bottom;
+  height: 25px;
+}
+
+.footer .right{
+  float: right;
+  display: inline-block;
+  margin: 16px 0;
+  padding: 0;
+  font-size: 12px;
+}
+.footer .right li{
+  display: inline-block;
+}
+.footer .right li.pager{
+  margin-left: 40px;
+  opacity: .7;
+}
+.footer .right li.social a{
+  margin-left: 3px;
+  margin-right: 3px;
+  opacity: .7;
+}
+.footer .right li.social a:hover{
+  opacity: 1;
+}
+.footer .right li.social a i{
+  font-size: 18px;
+}
+.footer .right li a{
+  display: inline-block;
+  text-decoration: none;
+  opacity: .7;
+}
+.-color-white .footer .right li a{
+  color: white;
+}
+.-color-black .footer .right li a{
+  color: black;
+}
+.footer .right li a:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+/**/
+
+/* blocks */
+.block{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block-main{
+  background-image: url(../images/bg-main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.block-main .content{
+
+}
+.block-main .content .left{
+  width: 100%;
+  max-width: 500px;
+}
+.block-main .content .left a.wp-button{
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.block-main .content .left a.wp-button:hover{
+  text-decoration: underline;
+}
+.block-main .content .left a.wp-button img{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  margin-right: 10px;
+}
+.block-main .content .left .cryo-button{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.block-main .content h1{
+  font-size: 30px;
+}
+.block-main .content p{
+  font-size: 12px;
+}
+
+.block-about{
+}
+
+/* slider switcher */
+.slider{
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -100px;
+}
+.slider li{
+  display: block;
+  text-align: center;
+  padding: 2px;
+  cursor: pointer;
+}
+.slider li a{
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  width: 4px;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.-color-white .slider li a{
+  background: white;
+}
+.-color-black .slider li a{
+  background: black;
+}
+.slider li.active a,
+.slider li:hover a{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+}
+/**/
+
+.block-main{
+  display: none;
+}
