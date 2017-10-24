@@ -1,78 +1,99 @@
-/* line 7, ../sass/styles.scss */
+/* line 10, ../sass/styles.scss */
 .main-yellow-button:hover {
   background: #ffffff;
 }
-/* line 11, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 .main-yellow-button:active {
   background: #dadada;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 19, ../sass/styles.scss */
 .yellow-button {
   background: #f8e81c;
   color: #000000;
   border-radius: 6px;
 }
-/* line 21, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 .yellow-button:hover {
   background: #123997;
   color: #ffffff;
 }
-/* line 26, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 .yellow-button:active {
   background: #102965;
   color: #ffffff;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
+.blue-button {
+  border: solid 1px #123997;
+  background: #ffffff;
+  color: #123997;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+/* line 44, ../sass/styles.scss */
+.blue-button:hover {
+  color: #ffffff;
+  background: #123997;
+}
+/* line 49, ../sass/styles.scss */
+.blue-button:active {
+  color: #ffffff;
+  border-color: #0f2965;
+  background-color: #0f2965;
+}
+
+/* line 58, ../sass/styles.scss */
 .block {
-  overflow: scroll;
   display: none;
 }
-/* line 38, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .block-about {
   background: url("./../images/logo-big.svg") center bottom no-repeat;
   background-size: contain;
 }
-/* line 42, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .block-about .container {
   position: relative;
   z-index: 2;
 }
-/* line 49, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 .block-video {
   background: url("./../images/bg-2_2x.png") center center no-repeat;
   background-color: #171f32;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .content .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .slider {
   z-index: 50;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 .title {
   font-family: 'WhitneySemiBold', sans-serif;
   font-size: 28px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 30px;
   text-align: left;
   color: #171e32;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-/* line 74, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .title span {
   display: block;
 }
-/* line 79, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .title__logo img {
   width: 78px;
   height: 29px;
@@ -80,7 +101,7 @@
   opacity: 0.1;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .about__dop_title {
   font-family: 'WhitneySemiBold', sans-serif;
   font-size: 18px;
@@ -91,7 +112,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-/* line 102, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .about__text {
   font-family: 'WhitneyMedium', sans-serif;
   font-size: 14px;
@@ -100,11 +121,11 @@
   color: #0e0e0e;
   opacity: 0.4;
 }
-/* line 109, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .about__text p {
   margin: 0;
 }
-/* line 114, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .about__infore {
   padding: 5px 0 5px 45px;
   background: url("./../images/about_icon.png") left center no-repeat;
@@ -115,33 +136,33 @@
   font-weight: 600;
   margin-top: 15px;
 }
-/* line 124, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .about__infore span {
   display: block;
 }
-/* line 129, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .about__col_wrap {
   margin: 30px -40px;
 }
-/* line 132, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .about__col_wrap:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 140, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .about__col {
   padding: 40px;
   float: left;
   width: 50%;
   min-height: 300px;
 }
-/* line 146, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .about__col--pull_right {
   float: right;
 }
-/* line 151, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .about__for_bg {
   position: absolute;
   z-index: 1;
@@ -150,7 +171,7 @@
   right: 0;
   bottom: 0;
 }
-/* line 160, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .about__top_left {
   width: 732px;
   height: 706px;
@@ -161,7 +182,7 @@
   background: url("./../images/line-2.svg") center center no-repeat;
   background-size: contain;
 }
-/* line 170, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .about__top_center {
   width: 363px;
   position: absolute;
@@ -172,7 +193,7 @@
   background: url("./../images/group-2.svg") center center no-repeat;
   background-size: contain;
 }
-/* line 180, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .about__bottom_center {
   position: absolute;
   z-index: 1;
@@ -184,12 +205,12 @@
   background-size: contain;
 }
 
-/* line 194, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 .video__play_wrap {
   padding: 150px;
   margin: 40px auto;
 }
-/* line 199, ../sass/styles.scss */
+/* line 222, ../sass/styles.scss */
 .video__play {
   background: url("./../images/play-wh.svg") center top no-repeat;
   text-decoration: none;
@@ -200,12 +221,12 @@
   display: block;
   position: relative;
 }
-/* line 209, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .video__play:hover {
   text-decoration: none;
   background-image: url("./../images/play-wh_hover.svg");
 }
-/* line 214, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 .video__play:before {
   position: absolute;
   top: -100px;
@@ -217,7 +238,7 @@
   display: block;
   content: ' ';
 }
-/* line 225, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .video__play:after {
   position: absolute;
   left: -100px;
@@ -229,11 +250,11 @@
   display: block;
   content: ' ';
 }
-/* line 238, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
 .video__logo_wrap {
   text-align: right;
 }
-/* line 241, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .video__logo {
   background: url("./../images/logo_wh.svg") center center no-repeat;
   background-size: contain;
@@ -241,14 +262,14 @@
   height: 16px;
   display: inline-block;
 }
-/* line 249, ../sass/styles.scss */
+/* line 272, ../sass/styles.scss */
 .video__text {
   font-size: 26px;
   text-align: center;
   color: #ffffff;
   line-height: 35px;
 }
-/* line 256, ../sass/styles.scss */
+/* line 279, ../sass/styles.scss */
 .video__title {
   color: #ffffff;
   font-size: 28px;
@@ -258,7 +279,7 @@
   font-weight: 600;
   line-height: 35px;
 }
-/* line 266, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 .video__dop_text {
   bottom: 100px;
   opacity: 0.3;
@@ -270,4 +291,151 @@
   line-height: 20px;
   text-align: center;
   margin-top: 200px;
+}
+
+/* line 306, ../sass/styles.scss */
+.purchase__block {
+  margin: 0 -30px;
+}
+/* line 308, ../sass/styles.scss */
+.purchase__block:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+@media (max-width: 1199px) {
+  /* line 306, ../sass/styles.scss */
+  .purchase__block {
+    margin: 0 -30px;
+  }
+}
+/* line 319, ../sass/styles.scss */
+.purchase__block .title {
+  margin-top: 15px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1199px) {
+  /* line 324, ../sass/styles.scss */
+  .purchase__block .title span {
+    display: inline;
+  }
+}
+/* line 331, ../sass/styles.scss */
+.purchase__item {
+  width: 33.3%;
+  float: left;
+  padding: 30px 20px;
+}
+@media (max-width: 1199px) {
+  /* line 331, ../sass/styles.scss */
+  .purchase__item {
+    width: 50%;
+    padding: 15px;
+  }
+  /* line 340, ../sass/styles.scss */
+  .purchase__item:first-of-type {
+    width: 100%;
+  }
+}
+@media (max-width: 639px) {
+  /* line 331, ../sass/styles.scss */
+  .purchase__item {
+    width: 100%;
+  }
+}
+/* line 350, ../sass/styles.scss */
+.purchase__text {
+  color: #000000;
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "WhitneyMedium", sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+  height: 54px;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  /* line 350, ../sass/styles.scss */
+  .purchase__text {
+    display: none;
+  }
+}
+/* line 366, ../sass/styles.scss */
+.purchase__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  font-family: "WhitneyMedium", sans-serif;
+  color: #262626;
+  margin-bottom: 15px;
+}
+/* line 376, ../sass/styles.scss */
+.purchase__bottom:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* line 384, ../sass/styles.scss */
+.purchase__price {
+  float: left;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: #f1f1f1;
+  margin-right: 5px;
+}
+/* line 394, ../sass/styles.scss */
+.purchase__btn {
+  display: block;
+  float: left;
+}
+/* line 399, ../sass/styles.scss */
+.purchase__icon {
+  margin-bottom: 20px;
+  background: left center no-repeat;
+  background-size: contain;
+  height: 55px;
+  width: 80px;
+}
+@media (max-width: 1199px) {
+  /* line 399, ../sass/styles.scss */
+  .purchase__icon {
+    float: left;
+  }
+}
+/* line 410, ../sass/styles.scss */
+.purchase__icon--1 {
+  background-image: url("./../images/iconPhysics.svg");
+}
+/* line 413, ../sass/styles.scss */
+.purchase__icon--2 {
+  background-image: url("./../images/iconDna.svg");
+}
+/* line 416, ../sass/styles.scss */
+.purchase__icon--3 {
+  background-image: url("./../images/iconDog.svg");
+}
+/* line 419, ../sass/styles.scss */
+.purchase__icon--4 {
+  background-image: url("./../images/iconBrain.svg");
+}
+/* line 422, ../sass/styles.scss */
+.purchase__icon--5 {
+  background-image: url("./../images/iconMan.svg");
+}
+/* line 425, ../sass/styles.scss */
+.purchase__icon--6 {
+  background-image: url("./../images/iconFrezer.svg");
+}
+/* line 428, ../sass/styles.scss */
+.purchase__icon--7 {
+  background-image: url("./../images/iconBu.svg");
+}
+/* line 431, ../sass/styles.scss */
+.purchase__icon--8 {
+  background-image: url("./../images/iconSpace.svg");
 }
