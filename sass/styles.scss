@@ -74,6 +74,17 @@ $title_color: #0e0e0e;
 		background: url($base_img + 'bg-2_2x.png') center center no-repeat;
 		background-color: #171f32;
 	}
+
+	&-prospects{
+		background: #171e32;
+		position: relative;
+	}
+}
+
+.body_wrap{
+	height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .content .container{
@@ -106,6 +117,14 @@ $title_color: #0e0e0e;
 			margin-bottom: 5px;
 			opacity: 0.1;
 		}
+	}
+
+	&--in_darck{
+		color: #ffffff;
+	}
+
+	span.light{
+		font-family: "WhitneyMedium";
 	}
 }
 
@@ -432,4 +451,220 @@ $title_color: #0e0e0e;
 			background-image: url($base_img + 'iconSpace.svg');
 		}
 	}
+}
+
+.prospects{
+
+	&__content{
+		padding-left: 33.4%;
+	}
+
+	&__img{
+		position: absolute;
+		right: 66.6%;
+		width: 33.3%;
+		overflow: hidden;
+		height: 100%;
+
+		img{
+			position: absolute;
+			min-height: 100%;
+			min-width: 100%;
+			display: block;
+			top: 0;
+			right: 0;
+		}
+
+	}
+
+	&__item_wrap{
+		margin: 0 -55px;
+
+		&:after{
+			content:" ";
+			display:block;
+			height: 0;
+			clear: both;
+		}
+	}
+
+	&__item{
+		min-height: 220px;
+		width: 50%;
+		padding: 15px; 
+
+		float: left;
+	}
+
+	&__text_wrap{
+		padding: 30px 40px;
+
+		&:hover{
+			background: rgba(216, 216, 216, 0.02);
+			// background: #d8d8d8;
+
+			.prospects__title, .prospects__text{
+				opacity: 1;
+			}
+		}
+	}
+
+	&__title{
+		opacity: 0.6;
+		color: #ffffff;
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+
+	&__text{
+		font-size: 14px;
+		line-height: 17px;
+		color: #ffffff;
+		opacity: 0.3;
+	}
+
+	&__dop{
+		margin-top: 40px;
+
+		&:after{
+			content:" ";
+			display:block;
+			height: 0;
+			clear: both;
+		}
+	}
+
+	&__dop_col{
+		width: 50%;
+		float: left;
+	}
+
+	&__release{
+		padding-left: 35px;
+		line-height: 32px;
+		background: url($base_img + 'icon-pdf.svg') left center no-repeat;
+		background-size: contain;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 18px;
+	}
+	&__logo{
+		font-size: 12px;
+		color: rgba(255, 255, 255, 0.3);
+		line-height: 12px;
+		display: inline-block;
+		margin-right: 50px;
+		text-decoration: none;
+		vertical-align: top;
+
+
+		span{
+			display: block;
+		}
+	}
+
+	&__l_img{
+		height: 25px;
+		line-height: 25px;
+		margin-bottom: 10px;
+
+		img{
+			max-height: 25px;
+			max-width: 130px;
+			vertical-align: bottom;
+		}
+	}
+}
+
+.roadmap{
+	&__wrap{
+		// position: relative;
+	}
+
+	&__slider{
+
+	}
+
+	&__item{
+		&.slick-active{
+			.roadmap__title, .roadmap__text, .roadmap__year{
+				opacity: 1;
+			}
+			.roadmap__icon{
+				&:after{
+					height: 30px;
+					width: 30px;
+					// border-radius: 0;
+					background-image: url($base_img + 'time.svg');
+					background-color: #123997;
+				}
+			}
+		}
+	}
+
+	&__year{
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 14px;
+		color: #262626;
+		opacity: 0.3;
+	}
+
+	&__icon{
+		position: relative;
+		height: 30px;
+		width: 100%;
+		margin-bottom: 60px;
+
+		&:before{
+			content: ' ';
+			position: absolute;
+			top: 15px;
+			width: 100%;
+			left: 0;
+			height: 1px;
+			background: #979797;
+			opacity: 0.2;
+			display: block;
+		}
+
+		&:after{
+			position: absolute;
+			top: 0;
+			left: 15px;
+			margin: auto 0;
+			bottom: 0;
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			background: center center no-repeat #d8d8d8;
+			background-size: 24px 24px;
+			content: ' ';
+		}
+	}
+
+	&__text{
+		padding: 0 15px;
+		font-size: 13px;
+		line-height: 19px;
+		color: #000000;
+		opacity: 0.2;
+	}
+
+	&__title{
+		padding: 0 15px;
+		opacity: 0.2;
+		font-size: 24px;
+		line-height: 28px;
+		color: #262626;
+		font-weight: 500;
+		height: 84px;
+		margin-bottom: 20px;
+
+		span{
+			display: block;
+		}
+	}
+
 }
