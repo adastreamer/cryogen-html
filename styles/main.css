@@ -99,7 +99,20 @@ b{
 /* header */
 .header{
   width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
 }
+
+.header.-color-white .-black,
+.header.-color-black .-white{
+  display: none;
+}
+.header.-color-white .-black,
+.header.-color-black .-white{
+  display: none;
+}
+
 .header .logo{
   display: inline-block;
   text-decoration: none;
@@ -110,10 +123,10 @@ b{
   height: 30px;
 }
 /* menu */
-.-color-white .header .menu{
+.-color-white.header .menu{
   color: white;
 }
-.-color-black .header .menu{
+.-color-black.header .menu{
   color: black;
 }
 .header .menu{
@@ -135,10 +148,10 @@ b{
   vertical-align: middle;
   text-decoration: none;
 }
-.-color-white .header .menu li a{
+.-color-white.header .menu li a{
   color: white;
 }
-.-color-black .header .menu li a{
+.-color-black.header .menu li a{
   color: black;
 }
 .header .menu li a:hover{
@@ -147,10 +160,10 @@ b{
 .header .menu li .sep{
   opacity: .5;
 }
-.-color-white .header .menu li .sep{
+.-color-white.header .menu li .sep{
   color: white;
 }
-.-color-black .header .menu li .sep{
+.-color-black.header .menu li .sep{
   color: black;
 }
 .header .menu li .lang-icon{
@@ -169,13 +182,13 @@ b{
 .header .menu li .join:hover{
   text-decoration: none;
 }
-.-color-white .header .menu li .join:hover{
+.-color-white.header .menu li .join:hover{
   background-color: white;
   border: solid 1px white;
   color: black;
   text-decoration: none;
 }
-.-color-black .header .menu li .join:hover{
+.-color-black.header .menu li .join:hover{
   background-color: black;
   border: solid 1px black;
   color: white;
@@ -192,6 +205,16 @@ b{
   text-align: left;
   display: inline-block;
   vertical-align: bottom;
+  z-index: 1;
+}
+
+.footer.-color-white .-black,
+.footer.-color-black .-white{
+  display: none;
+}
+.footer.-color-white .-black,
+.footer.-color-black .-white{
+  display: none;
 }
 
 .footer .left{
@@ -252,10 +275,10 @@ b{
   text-decoration: none;
   opacity: .7;
 }
-.-color-white .footer .right li a{
+.-color-white.footer .right li a{
   color: white;
 }
-.-color-black .footer .right li a{
+.-color-black.footer .right li a{
   color: black;
 }
 .footer .right li a:hover{
@@ -271,6 +294,7 @@ b{
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 70px;
 }
 
 .block-main{
