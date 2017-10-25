@@ -100,7 +100,7 @@ b{
 .header{
   width: 100%;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   top: 0;
 }
 
@@ -205,7 +205,7 @@ b{
   text-align: left;
   display: inline-block;
   vertical-align: bottom;
-  z-index: 1;
+  z-index: 10;
 }
 
 .footer.-color-white .-black,
