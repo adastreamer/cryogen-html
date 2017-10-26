@@ -115,7 +115,16 @@ $(document).ready(function(){
     asNavFor: '.roadmap__slider'
   });
 
+  $('.hamburger').click(function(){
+    $('.menu').toggleClass('open');
+    return false;
+  });
+  if (!$(event.target).closest(".menu").length){
+    $('.menu').removeClass('open');
+  }
+
   $(window).resize(function(){
+    $('.menu').removeClass('open');
     win_w = $('.body_wrap').width();
     if (win_w < 900) {
       $("#header").removeClass("-color-white").addClass("-color-black");

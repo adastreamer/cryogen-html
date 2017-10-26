@@ -1426,23 +1426,87 @@
   }
 }
 
-/* line 1349, ../sass/styles.scss */
+@media (max-width: 899px) {
+  /* line 1347, ../sass/styles.scss */
+  .footer .right, .footer .left {
+    float: left;
+  }
+}
+
+/* line 1353, ../sass/styles.scss */
+.hamburger {
+  display: none;
+  float: right;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  background: url("./../images/hamburger__wh.svg") center center no-repeat;
+  background-size: 38px 38px;
+}
+@media (max-width: 899px) {
+  /* line 1353, ../sass/styles.scss */
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 899px) {
+  /* line 1367, ../sass/styles.scss */
+  .header .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 94px;
+    z-index: 50;
+    background: #ffffff;
+    color: #000000 !important;
+    padding: 20px;
+    width: 320px;
+    max-width: 100%;
+  }
+  /* line 1380, ../sass/styles.scss */
+  .header .menu.open {
+    display: block;
+  }
+  /* line 1385, ../sass/styles.scss */
+  .header .menu li:nth-child(1), .header .menu li:nth-child(2), .header .menu li:nth-child(3), .header .menu li:nth-child(4), .header .menu li:last-child {
+    float: none;
+    display: block;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  /* line 1392, ../sass/styles.scss */
+  .header .menu li:nth-child(5), .header .menu li:nth-child(6) {
+    display: none;
+  }
+  /* line 1395, ../sass/styles.scss */
+  .header .menu li:nth-child(7) {
+    margin-left: 0;
+  }
+}
+
+/* line 1405, ../sass/styles.scss */
+.-color-black .hamburger {
+  background-image: url("./../images/hamburger.svg");
+}
+
+/* line 1412, ../sass/styles.scss */
 .slick-slider * {
   outline: none;
   box-sizing: border-box;
 }
-/* line 1354, ../sass/styles.scss */
+/* line 1417, ../sass/styles.scss */
 .slick-slider .slick-slide {
   float: left;
 }
-/* line 1359, ../sass/styles.scss */
+/* line 1422, ../sass/styles.scss */
 .slick-slider .slick-track:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 1367, ../sass/styles.scss */
+/* line 1430, ../sass/styles.scss */
 .slick-slider .slick-list {
   padding: 0 !important;
   margin: 0 !important;
