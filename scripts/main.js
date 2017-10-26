@@ -1,19 +1,22 @@
 $(document).ready(function(){
+  var win_w = $('.body_wrap').width();
+
   $(".slider li a").click(function(){
     $(".slider li").removeClass('active');
     var targetID = $(this).attr("href");
     $('.slider li a[href=' + targetID +']').closest('li').addClass('active');
     var $target = $(targetID);
-    $(".block").not($target).removeClass('active').fadeOut();
-    $target.addClass('active').fadeIn();
-    $parent = $(this).parent().parent().parent();
-    if ($parent.hasClass("-color-white")){
-      $("#header").removeClass("-color-white").addClass("-color-black");
-      $("#footer").removeClass("-color-white").addClass("-color-black");
-    }
-    if ($parent.hasClass("-color-black")){
+    $(".block").not($target).removeClass('active');
+    $target.addClass('active');
+    if ($target.hasClass("-color-white")){
       $("#header").removeClass("-color-black").addClass("-color-white");
-      $("#footer").removeClass("-color-black").addClass("-color-white");
+      $("#footer").removeClass("-color-black").addClass("-color-white");      
+      $(".slider__wrap").removeClass("-color-black").addClass("-color-white");
+    }
+    if ($target.hasClass("-color-black")){
+      $("#header").removeClass("-color-white").addClass("-color-black");
+      $("#footer").removeClass("-color-white").addClass("-color-black");      
+      $(".slider__wrap").removeClass("-color-white").addClass("-color-black");
     }
     return false;
   });
@@ -22,16 +25,17 @@ $(document).ready(function(){
     var targetID = $(this).find("a").attr("href");
     $('.slider li a[href=' + targetID +']').closest('li').addClass('active');
     var $target = $(targetID);
-    $(".block").not($target).removeClass('active').fadeOut();
-    $target.addClass('active').fadeIn();
-    $parent = $(this).parent().parent();
-    if ($parent.hasClass("-color-white")){
-      $("#header").removeClass("-color-white").addClass("-color-black");
-      $("#footer").removeClass("-color-white").addClass("-color-black");
-    }
-    if ($parent.hasClass("-color-black")){
+    $(".block").not($target).removeClass('active');
+    $target.addClass('active');
+    if ($target.hasClass("-color-white")){
       $("#header").removeClass("-color-black").addClass("-color-white");
       $("#footer").removeClass("-color-black").addClass("-color-white");
+      $(".slider__wrap").removeClass("-color-black").addClass("-color-white");
+    }
+    if ($target.hasClass("-color-black")){
+      $("#header").removeClass("-color-white").addClass("-color-black");
+      $("#footer").removeClass("-color-white").addClass("-color-black");
+      $(".slider__wrap").removeClass("-color-white").addClass("-color-black");
     }
     return false;
   });
@@ -40,14 +44,27 @@ $(document).ready(function(){
     $(".slider li.active").click();
   }
   else{
-    $('.block:first-of-type').addClass('active').fadeIn();
-    var block_id = $('.block:first-of-type').attr('id');
+    $('.block:first').addClass('active');
+    var block_id = $('.block:first').attr('id');
+    var $target = $("#" + block_id);
     $('.slider li a[href="#'+ block_id +'"]').closest('li').addClass('active');
+    if (win_w < 900 || $target.hasClass("-color-black")) {
+      $("#header").removeClass("-color-white").addClass("-color-black");
+      $("#footer").removeClass("-color-white").addClass("-color-black");
+      $(".slider__wrap").removeClass("-color-white").addClass("-color-black");
+    }
+    else{
+      if ($target.hasClass("-color-white")){
+        $("#header").removeClass("-color-black").addClass("-color-white");
+        $("#footer").removeClass("-color-black").addClass("-color-white");
+        $(".slider__wrap").removeClass("-color-black").addClass("-color-white");
+      }
+    }
   }
 
-   $('.team__slider').slick({
+  $('.team__slider').slick({
     fade: false,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
@@ -55,9 +72,26 @@ $(document).ready(function(){
     prevArrow: '<div class="slick-prev"><div class="team__arr"></div></div>',
     nextArrow: '<div class="slick-next"><div class="team__arr"></div></div>',
     appendArrows: $('.team__arr_wrap'),
-    appendDots: $('.team__dots')
+    appendDots: $('.team__dots'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
-   $('.roadmap__slider').slick({
+
+  $('.roadmap__slider').slick({
     fade: false,
     slidesToShow: 1,
     arrows: true,
@@ -68,6 +102,7 @@ $(document).ready(function(){
     nextArrow: '<div class="slick-next"><div class="roadmap__nav_arr"></div></div>',
     appendArrows: $('.roadmap__nav_arr_wrap')
   });
+
   $('.roadmap__nav').slick({
     fade: false,
     autoplay: true,
@@ -79,4 +114,17 @@ $(document).ready(function(){
     focusOnSelect: true,
     asNavFor: '.roadmap__slider'
   });
+
+  $(window).resize(function(){
+    win_w = $('.body_wrap').width();
+    if (win_w < 900) {
+      $("#header").removeClass("-color-white").addClass("-color-black");
+      $("#footer").removeClass("-color-white").addClass("-color-black");
+      $(".slider__wrap").removeClass("-color-white").addClass("-color-black");
+    }
+    else{
+      $(".slider li.active").click();
+      console.log('1');
+    }
+  })
 });

@@ -45,7 +45,7 @@ html, body{
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 0;
   margin: 0;
   font-family: "WhitneyBook", Arial;
@@ -344,16 +344,27 @@ b{
 /* slider switcher */
 .slider{
   display: block;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  margin-top: -100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.slider__wrap{
+  position: fixed;
+  z-index: 50;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 200px;
+}
+
 .slider li{
   display: block;
   text-align: center;
   padding: 2px;
   cursor: pointer;
+  outline: none;
 }
 .slider li a{
   display: inline-block;
@@ -379,6 +390,6 @@ b{
 }
 /**/
 
-.block-main{
+/*.block-main{
   display: none;
-}
+}*/
