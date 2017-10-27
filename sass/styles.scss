@@ -827,7 +827,7 @@ $title_color: #0e0e0e;
 		position: relative;
 		height: 30px;
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 20px;
 
 		&:before{
 			content: ' ';
@@ -1464,6 +1464,7 @@ $title_color: #0e0e0e;
 		background-image: url($base_img + 'hamburger.svg');
 	}
 }
+
 
 // slick
 	.slick-slider {

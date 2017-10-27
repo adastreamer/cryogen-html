@@ -839,7 +839,7 @@
   position: relative;
   height: 30px;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 /* line 832, ../sass/styles.scss */
 .roadmap__icon:before {
@@ -1511,23 +1511,23 @@
   background-image: url("./../images/hamburger.svg");
 }
 
-/* line 1470, ../sass/styles.scss */
+/* line 1471, ../sass/styles.scss */
 .slick-slider * {
   outline: none;
   box-sizing: border-box;
 }
-/* line 1475, ../sass/styles.scss */
+/* line 1476, ../sass/styles.scss */
 .slick-slider .slick-slide {
   float: left;
 }
-/* line 1480, ../sass/styles.scss */
+/* line 1481, ../sass/styles.scss */
 .slick-slider .slick-track:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 1488, ../sass/styles.scss */
+/* line 1489, ../sass/styles.scss */
 .slick-slider .slick-list {
   padding: 0 !important;
   margin: 0 !important;
