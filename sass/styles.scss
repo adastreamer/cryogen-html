@@ -615,10 +615,10 @@ $title_color: #0e0e0e;
 .prospects{
 
 	&__content{
-		padding-left: 33.4%;
+		// padding-left: 33.4%;
 
 		@media(max-width: 1600px){
-			padding-left: 40%;
+			// padding-left: 40%;
 		}
 
 		@media(max-width: $desktop){
@@ -634,6 +634,8 @@ $title_color: #0e0e0e;
 		height: 100%;
 		top: 0;
 		bottom: 0;
+
+		display: none;
 
 		@media(max-width: $desktop){
 			display: none;
@@ -1256,6 +1258,24 @@ $title_color: #0e0e0e;
 
 			@media(max-width: $desktop){
 				width: 100%;
+			}
+		}
+
+		&:before{
+			content: ' ';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 50%;
+			opacity: 0.9;
+			background: #171e32;
+			z-index: 2;
+			height: 94px;
+
+			@media(max-width: $desktop){
+				width: 100%;
+				display: none;
 			}
 		}
 	}
