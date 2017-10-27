@@ -90,6 +90,33 @@ $(document).ready(function(){
       }
     ]
   });
+  $('.purchase__slider').slick({
+    fade: false,
+    // autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    dots: false,
+    prevArrow: '<div class="slick-prev"><div class="purchase__arr"></div></div>',
+    nextArrow: '<div class="slick-next"><div class="purchase__arr"></div></div>',
+    appendArrows: $('.purchase__arr_wrap'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
   $('.roadmap__slider').slick({
     fade: false,

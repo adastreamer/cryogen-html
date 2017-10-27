@@ -472,6 +472,44 @@ $title_color: #0e0e0e;
 		}
 	}
 
+	&__wrap{
+		position: relative;
+		padding: 0 20px;
+	}
+
+	&__slider{
+		overflow: hidden;
+	}
+
+
+	&__arr{
+		height: 26px;
+		width: 20px;
+		background: url($base_img + 'left-arrow__darck.svg') center center no-repeat;
+		background-size: contain;
+		cursor: pointer;
+	}
+
+	&__arr_wrap{
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 105px;
+		right: 0;
+		height: 0;
+
+		.slick-prev{
+			float: left;
+		}
+		.slick-next{
+			float: right;
+
+			.purchase__arr{
+				transform: rotate(180deg);
+			}
+		}
+	}
+
 	&__text{
 		color: #000000;
 		opacity: 0.3;
@@ -483,9 +521,9 @@ $title_color: #0e0e0e;
 		height: 54px;
 		overflow: hidden;
 
-		@media(max-width: $desktop){
-			display: none;
-		}
+		// @media(max-width: $desktop){
+		// 	display: none;
+		// }
 	}
 
 	&__title{
@@ -543,7 +581,7 @@ $title_color: #0e0e0e;
 		height: 55px;
 		width: 80px;
 
-		@media(max-width: $desktop){
+		@media(max-width: $tablet){
 			float: left;
 		}
 
@@ -966,14 +1004,6 @@ $title_color: #0e0e0e;
 		padding: 10px;
 	}
 
-	&__arr{
-		height: 26px;
-		width: 20px;
-		background: url($base_img + 'left-arrow.svg') center center no-repeat;
-		background-size: contain;
-		cursor: pointer;
-	}
-
 	&__nav_wrap{
 		text-align: center;
 	}
@@ -982,6 +1012,14 @@ $title_color: #0e0e0e;
 		padding: 0 40px;
 		position: relative;
 		display: inline-block;
+	}
+
+	&__arr{
+		height: 26px;
+		width: 20px;
+		background: url($base_img + 'left-arrow.svg') center center no-repeat;
+		background-size: contain;
+		cursor: pointer;
 	}
 
 	&__arr_wrap{
