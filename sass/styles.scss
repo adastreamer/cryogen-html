@@ -207,15 +207,15 @@ $title_color: #0e0e0e;
 			margin: 0;
 		}
 
-		@media(max-width: $desktop){
+		// @media(max-width: $desktop){
 			max-height: 54px;
 			overflow: hidden;
-		}
+		// }
 
 		&--hidden-desk{
-			@media(max-width: $desktop){
+			// @media(max-width: $desktop){
 				display: none;
-			}
+			// }
 		}
 	}
 
@@ -233,9 +233,9 @@ $title_color: #0e0e0e;
 			display: block;
 		}
 
-		@media(max-width: $desktop){
+		// @media(max-width: $desktop){
 			margin-bottom: 5px;
-		}
+		// }
 	}
 	
 	&__col_wrap{
@@ -248,10 +248,10 @@ $title_color: #0e0e0e;
 			clear: both;
 		}
 
-		@media(max-width: $desktop){
+		// @media(max-width: $desktop){
 			margin-left: -20px;
 			margin-right: -20px;
-		}
+		// }
 		@media(max-width: $tablet){
 			margin-left: 0;
 			margin-right: 0;
@@ -268,10 +268,10 @@ $title_color: #0e0e0e;
 			float: right;
 		}
 
-		@media(max-width: $desktop){
+		// @media(max-width: $desktop){
 			min-height: 0;
 			padding: 20px;
-		}
+		// }
 
 		@media(max-width: $tablet){
 			width: 100%;
