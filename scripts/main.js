@@ -127,13 +127,13 @@ $(document).ready(function(){
   });
 
   $('.pager__prev').click(function(){
-    if ($('.slder li:first') != $('.slider li.active')) {
+    if ($('.slider li:first') != $('.slider li.active')){
       $('.slider li.active').prev().click();
     }
     return false;
   });
   $('.pager__next').click(function(){
-    if ($('.slder li:last') != $('.slider li.active')) {
+    if ($('.slider li:last') != $('.slider li.active')){
       $('.slider li.active').next().click();
     }
     return false;
@@ -255,5 +255,18 @@ $(document).ready(function(){
     else{
       $(".slider li.active").click();
     }
-  })
+  });
+
+  if (win_w > 900){
+    var scale = 0.9;
+    $(".block").each(function(index, el){
+      contentEl = $(el).find(".content");
+      contentEl[0].style.transform = 'scale(' + scale + ')';
+      contentEl[0].style['-o-transform'] = 'scale(' + scale + ')';
+      contentEl[0].style['-webkit-transform'] = 'scale(' + scale + ')';
+      contentEl[0].style['-moz-transform'] = 'scale(' + scale + ')';
+    });
+
+
+  }
 });
