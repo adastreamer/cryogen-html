@@ -139,40 +139,6 @@ $(document).ready(function(){
     return false;
   });
 
-  var scroll_block = document.getElementById('document');
-
-  if (scroll_block.addEventListener) {
-    if ('onwheel' in document) {
-      // IE9+, FF17+
-      scroll_block.addEventListener("wheel", onWheel);
-    } else if ('onmousewheel' in document) {
-      // устаревший вариант события
-      scroll_block.addEventListener("mousewheel", onWheel);
-    } else {
-      // Firefox < 17
-      scroll_block.addEventListener("MozMousePixelScroll", onWheel);
-    }
-  } 
-  function onWheel(e) {
-    e = e || window.event;
-
-    // deltaY, detail содержат пиксели
-    // wheelDelta не дает возможность узнать количество пикселей
-    // onwheel || MozMousePixelScroll || onmousewheel
-    var delta = e.deltaY || e.detail || e.wheelDelta;
-
-    if (delta > 0) {
-      $('.pager__next').click();
-    }
-
-    else{
-      $('.pager__prev').click();
-    }
-
-    e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-  }
-
-
   $('.team__slider').slick({
     fade: false,
     // autoplay: true,
@@ -291,16 +257,14 @@ $(document).ready(function(){
     }
   });
 
-  if (win_w > 900){
-    var scale = 0.9;
-    $(".block").each(function(index, el){
-      contentEl = $(el).find(".content");
-      contentEl[0].style.transform = 'scale(' + scale + ')';
-      contentEl[0].style['-o-transform'] = 'scale(' + scale + ')';
-      contentEl[0].style['-webkit-transform'] = 'scale(' + scale + ')';
-      contentEl[0].style['-moz-transform'] = 'scale(' + scale + ')';
-    });
-
-
-  }
+  // if (win_w > 900){
+  //   var scale = 0.9;
+  //   $(".block").each(function(index, el){
+  //     contentEl = $(el).find(".content");
+  //     contentEl[0].style.transform = 'scale(' + scale + ')';
+  //     contentEl[0].style['-o-transform'] = 'scale(' + scale + ')';
+  //     contentEl[0].style['-webkit-transform'] = 'scale(' + scale + ')';
+  //     contentEl[0].style['-moz-transform'] = 'scale(' + scale + ')';
+  //   });
+  // }
 });
