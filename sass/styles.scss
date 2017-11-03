@@ -1548,6 +1548,18 @@ $title_color: #0e0e0e;
 	
 }
 
+.body_wrap{
+	@media(min-width: $tablet){
+		padding-top: 94px;
+
+		.header{
+			position: fixed;
+			background: #ffffff;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
 .-color-black{
 	.hamburger{
 		background-image: url($base_img + 'hamburger.svg');

@@ -1568,28 +1568,41 @@
   }
 }
 
-/* line 1552, ../sass/styles.scss */
+@media (min-width: 899px) {
+  /* line 1551, ../sass/styles.scss */
+  .body_wrap {
+    padding-top: 94px;
+  }
+  /* line 1555, ../sass/styles.scss */
+  .body_wrap .header {
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* line 1564, ../sass/styles.scss */
 .-color-black .hamburger {
   background-image: url("./../images/hamburger.svg");
 }
 
-/* line 1560, ../sass/styles.scss */
+/* line 1572, ../sass/styles.scss */
 .slick-slider * {
   outline: none;
   box-sizing: border-box;
 }
-/* line 1565, ../sass/styles.scss */
+/* line 1577, ../sass/styles.scss */
 .slick-slider .slick-slide {
   float: left;
 }
-/* line 1570, ../sass/styles.scss */
+/* line 1582, ../sass/styles.scss */
 .slick-slider .slick-track:after {
   content: " ";
   display: block;
   height: 0;
   clear: both;
 }
-/* line 1578, ../sass/styles.scss */
+/* line 1590, ../sass/styles.scss */
 .slick-slider .slick-list {
   padding: 0 !important;
   margin: 0 !important;
